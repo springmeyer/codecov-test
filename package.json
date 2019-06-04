@@ -1,0 +1,27 @@
+{
+  "name": "codecov-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "SET=true nyc tape test/*.test.js",
+    "coverage": "nyc report --reporter html && opener coverage/index.html",
+    "upload-coverage": "nyc report --reporter json && codecov -f ./coverage/coverage-final.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/springmeyer/codecov-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/springmeyer/codecov-test/issues"
+  },
+  "homepage": "https://github.com/springmeyer/codecov-test#readme",
+  "devDependencies": {
+    "codecov": "^3.5.0",
+    "nyc": "^14.1.1",
+    "opener": "^1.5.1",
+    "tape": "^4.10.2"
+  }
+}
