@@ -21,3 +21,4 @@ function go2() {
 }
 
 exports.go = go;
+exports.go2 = go2;
