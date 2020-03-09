@@ -6,3 +6,4 @@ test('one', function(t) {
     t.ok(app.go2());
     t.end();
 });
+
