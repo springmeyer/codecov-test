@@ -12,4 +12,12 @@ function go() {
   return true;
 }
 
+function go2() {
+  if (process.env.SET) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 exports.go = go;
