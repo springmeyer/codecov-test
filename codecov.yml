@@ -1,10 +1,16 @@
+comment: false
+
 coverage:
+  parsers:
+    javascript:
+      enable_partials: yes
   status:
+    patch: off
     project:
       default: off
-      unit:
+      one:
         flags: one
-      visual:
+      two:
         flags: two
 
 flags:
